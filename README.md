@@ -10,7 +10,7 @@ js-websoc.html : connects to the server through websockets and displays received
 To Run the web-app:
 
 1. Download all the files into a folder.
-2. run server-node.js Node.js command prompt (will be available after installing Node.js).
+2. run server-node.js using Node.js command prompt (will be available after installing Node.js).   
 3. start a publisher (in any language) on port 5556.
 4. open js-websoc.html in browser
 
