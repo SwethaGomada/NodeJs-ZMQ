@@ -1,6 +1,6 @@
 
 
-var zmq = require('F:/node_modules/zeromq')
+var zmq = require('./zeromq')
   , sock = zmq.socket('sub');
 
 let zmqSubs = {

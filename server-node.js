@@ -1,7 +1,7 @@
 
-var WebSocketServer = require('F:/node_modules/websocket').server;
+var WebSocketServer = require('./websocket').server;
 var http = require('http');
-const zmqRun = require("F:/subs.js");
+const zmqRun = require("./subs.js");
 
 var server = http.createServer(function(request, response) {
     console.log((new Date()) + ' Received request for ' + request.url);
