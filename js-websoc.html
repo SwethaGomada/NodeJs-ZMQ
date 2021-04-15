@@ -1,0 +1,20 @@
+<html>
+<body>
+<p id=para></p>
+<script>	
+var d1 = document.getElementById('para');
+
+let socket = new WebSocket("ws://localhost:8080");
+socket.addEventListener('open', function (event) {
+    socket.send('Hello Server!');
+});
+socket.addEventListener('message', function (event) {
+    console.log(event);
+	d1.insertAdjacentHTML('beforeend', '<br>');
+	d1.insertAdjacentHTML('beforeend', event.data);
+});
+
+
+</script>
+</body>
+</html>
